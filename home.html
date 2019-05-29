@@ -1,0 +1,53 @@
+<!DOCTYPE html>
+<html lang="en" dir="ltr">
+ <head>
+   <meta charset="utf-8">
+   <title>Flask Parent Template</title>
+ </head>
+ <link rel="stylesheet" href="https://www.w3schools.com/w3css/3/w3.css">
+ <body>
+    <!-- Navigation -->
+		<nav class="w3-bar w3-black">
+		  <a href="home.html" class="w3-button w3-bar-item">Home</a>
+		  <a href="about.html" class="w3-button w3-bar-item">About</a>
+		  <a href="contact.html" class="w3-button w3-bar-item">Contact</a>
+		</nav>
+		
+	<!-- Slide Show -->
+		<section>
+		  <img class="mySlides" src="D:\share.it\Picture\kasol\IMG_1305.jpg" style="width:100%" height="720">
+		  <img class="mySlides" src="D:\share.it\Picture\kasol\IMG_20170605_163820_HDR.jpg" style="width:100%" height="720">
+		  <img class="mySlides" src="D:\share.it\Picture\kasol\IMG_20170606_114854_HDR.jpg" style="width:100%" height="720">
+		</section>
+	
+		<section class="w3-container w3-center" >
+		  <h2 class="w3-wide" >ARPIT PATHAK</h2>
+		  <p class="w3-opacity"><i><center>A learner and explorer.</center></i></p>
+		</section>
+		
+		<section class="w3-container w3-content w3-center">
+			<p>
+			This website is an overview of my skills and achievements.
+			</p>
+		</section>
+	
+	<script>
+	// Automatic Slideshow - change image every 3 seconds
+		var myIndex = 0;
+		carousel();
+
+		function carousel() {
+		  var i;
+		  var x = document.getElementsByClassName("mySlides");
+		  for (i = 0; i < x.length; i++) {
+			x[i].style.display = "none";
+		  }
+		  myIndex++;
+		  if (myIndex > x.length) {myIndex = 1}
+		  x[myIndex-1].style.display = "block";
+		  setTimeout(carousel, 3000);
+		}
+	</script>
+	
+ </body>
+</html>
